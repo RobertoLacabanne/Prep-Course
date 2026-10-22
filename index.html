@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Recepción de Denuncias · MPF Entre Ríos</title>
+  <meta name="description" content="Guía operativa para el personal del Ministerio Público Fiscal de Entre Ríos que recibe denuncias: urgencias, pasos, pautas por tipo de hecho y preguntas.">
+  <meta name="theme-color" content="#f6f4ee">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/mpf_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/" aria-label="Inicio · Recepción de denuncias">
+        <img src="assets/mpf_logo.png" alt="Ministerio Público Fiscal de Entre Ríos" width="62" height="35">
+        <span class="brand-text">
+          <b>Recepción de denuncias</b>
+          <span>Ministerio Público Fiscal · Entre Ríos</span>
+        </span>
+      </a>
+      <nav class="mainnav" aria-label="Secciones">
+        <a href="#/" data-nav="inicio">Inicio</a>
+        <a href="#/recepcion/1" data-nav="recepcion">Recepción guiada</a>
+        <a href="#/preguntas" data-nav="preguntas">Preguntas</a>
+        <a href="#/dudas" data-nav="dudas">Dudas</a>
+        <a href="#/principios" data-nav="principios">Principios</a>
+      </nav>
+      <label class="search">
+        <span class="visually-hidden">Buscar en la guía</span>
+        <span data-icon="search"></span>
+        <input id="buscar" type="search" placeholder="Buscar: firma, celular, menor…" autocomplete="off">
+      </label>
+      <button class="btn-turno" type="button" data-turno>
+        <span data-icon="phone"></span><span>Turno</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1"></main>
+
+  <footer class="pie">
+    <div class="pie-inner">
+      <div>
+        <b id="pie-fuente"></b>
+        <p id="pie-version"></p>
+        <p><a href="#/principios">Finalidad y principios de actuación</a></p>
+      </div>
+      <p id="pie-aviso"></p>
+    </div>
+  </footer>
+
+  <nav class="tabbar" aria-label="Secciones">
+    <a href="#/" data-nav="inicio"><span data-icon="house"></span>Inicio</a>
+    <a href="#/recepcion/1" data-nav="recepcion"><span data-icon="list-checks"></span>Recepción</a>
+    <a href="#/preguntas" data-nav="preguntas"><span data-icon="message-circle-question"></span>Preguntas</a>
+    <a href="#/dudas" data-nav="dudas"><span data-icon="circle-help"></span>Dudas</a>
+    <a href="#/buscar" data-nav="buscar"><span data-icon="search"></span>Buscar</a>
+  </nav>
+
+  <dialog class="turno-dlg" id="turno" aria-labelledby="turno-titulo"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
